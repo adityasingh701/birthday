@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday</title>
+    <title>Birthday-Adï</title>
     <style>
       @import url(https://fonts.googleapis.com/css?family=Lato:300italic);
 
@@ -124,7 +124,27 @@
           font-size: 1.4em;
         }
       }
-    </style>
+
+.from-text {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #0078ff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+body.loaded .from-text {
+  opacity: 1;
+}
+  </style>
   </head>
   <body>
       <div class="cake">
@@ -284,8 +304,17 @@
       </svg>
       <div class="text">
       <h1>Happy Birthday!</h1>
-      <p class="name">Nøøb</p>
+      <b class="name">Nøøb</b>
       </div>
+    <div class="from-text">≈ From Your BestFriend 🤍</div>
+    <script>
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.body.classList.add('loaded');
+  }, 2000); 
+});
+    </script>
   </body>
 
 </html>
+
