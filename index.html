@@ -314,7 +314,20 @@ window.addEventListener('load', () => {
   }, 3000); 
 });
     </script>
+<audio id="bg-music" loop>
+  <source src="birth-day.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener('click', () => {
+  const music = document.getElementById('bg-music');
+  music.play();
+});
+</script>
+    
+  
   </body>
 
 </html>
+
 
