@@ -330,7 +330,14 @@ span.gradient-letter {
       <h1>Happy Birthday!</h1>
       <b class="name">Noob</b>
       </div>
-   <span class="gradient-letter">▶︎</span>
+    
+   <span class="gradient-letter" id="letter">▶︎</span>
+    <script>
+document.getElementById("letter").addEventListener("click", function() {
+  this.classList.add("hidden");
+});
+    </script>
+    
     <div class="from-text">≈ From Your BestFriend 🤍</div>
     <script>
 window.addEventListener('load', () => {
@@ -356,6 +363,7 @@ document.addEventListener('click', () => {
   </body>
 
 </html>
+
 
 
 
