@@ -144,7 +144,27 @@
 body.loaded .from-text {
   opacity: 1;
 }
+span.gradient-letter {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  font-size: 70px;
+  font-weight: 800;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ff0066, #ffcc00, #33ccff, #6600ff);
+  background-size: 300% 300%;
+  animation: shine 4s ease infinite;
+  box-shadow: 0 0 25px rgba(255,255,255,0.15);
+  z-index: 9999;
+}
 
+@keyframes shine {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
       
   </style>
   </head>
@@ -310,6 +330,7 @@ body.loaded .from-text {
       <h1>Happy Birthday!</h1>
       <b class="name">Noob</b>
       </div>
+   <span class="gradient-letter">▶︎</span>
     <div class="from-text">≈ From Your BestFriend 🤍</div>
     <script>
 window.addEventListener('load', () => {
@@ -335,6 +356,7 @@ document.addEventListener('click', () => {
   </body>
 
 </html>
+
 
 
 
